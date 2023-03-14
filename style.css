@@ -1,6 +1,8 @@
-@media (min-width:375px){
+
 *{
+    margin: 0;
     font-family: 'Hanken Grotesk', sans-serif;
+    box-sizing: border-box;
 }
 #container{
     display:flex;
@@ -12,17 +14,21 @@
     font-family: 'Hanken Grotesk', sans-serif;
 }
 #box-container{
-    display:flex;
-    flex-direction:row;
-    width:70%;
+    width: 90%;
+    max-width: 700px;
     height:370px;
-    justify-content:space-between;
-    border-radius:15px;
-    border:1px black;
-    letter-spacing:0.3px;
+    justify-content: space-between;
+    border-radius: 15px;
+    border: 1px black;
+    letter-spacing: 0.3px;
+}
+@media (min-width: 500px) {
+    #box-container{
+        display: flex;
+    }
 }
 .box{
-    width:47%;
+    width:100%;
     height:100%;
     display:flex;
     flex-direction:column;
@@ -70,9 +76,11 @@ h2{
     font-weight:700;
 }
 .two{
+    /* border:1px solid; */
     display:flex;
     flex-direction:column;
     justify-content:space-around;
+    align-items: center;
 }
 .two h3{
     color:hsl(224, 30%, 27%);
@@ -145,7 +153,8 @@ svg{
     color:hsl(234, 85%, 45%);
     padding-left:5px;
 }
-}
+
+
 @media (max-width:500px){
     .circle{
         display:flex;
@@ -159,15 +168,9 @@ svg{
         );
         box-sizing:border-box;
         padding-top:25px;
-    }
-    .two{
-        width:50%;
-    }   
+    }  
 }
 @media (max-width:375px){
-    *{
-        margin:0;
-    }
     .circle{
         display:flex;
         justify-content:center;
@@ -182,26 +185,22 @@ svg{
         padding-top:25px;
     }
     #container{
-        display:block;
-        margin:0;
-        max-width:375px;
-        height:100vh;
+        margin: 50px auto;
+        max-width: 375px;
+        height: 300px;
     }
     #box-container{
-        flex-direction:column;
-        width:100%;
+        width:90%;
         height:100%;
     }
     .box{
         width:100%;
+        height: 50%;
     }
-    .two{
-        padding-left:10%;
-    }
-    .one{
+    /* .one{
         border-top-right-radius:0;
         border-top-left-radius:0;
-    }   
+    }    */
 }
 @media (max-width:400px){
     .circle{
