@@ -125,6 +125,7 @@ svg{
 .content-box .content-one p{
     color:hsl(0, 100%, 67%);
     padding-left:3px;
+    align-self:center;
 }
 .content-two p{
     color:hsl(224, 30%, 27%);
