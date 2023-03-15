@@ -80,6 +80,7 @@ h2{
     display:flex;
     flex-direction:column;
     justify-content:space-around;
+    padding:auto;
 }
 .two h3{
     color:hsl(224, 30%, 27%);
